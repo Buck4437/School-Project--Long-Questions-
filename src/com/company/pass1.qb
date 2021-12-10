@@ -1,0 +1,49 @@
+QUESTION
+    PROMPT
+        BLOB
+        BLOB4
+    END
+
+    KEYWORDS
+        BLOB2
+        BLOB3
+    END
+
+    MODEL
+        TEST
+        TEST2
+        TESTTEST
+    END
+END
+
+QUESTION
+    PROMPT
+        BLOB
+        BLOB4
+    END
+
+    MODEL
+        TEST
+        TEST2
+        TESTTEST
+    END
+END
+
+QUESTION
+
+    KEYWORDS
+        BLOB2
+        BLOB3
+    END
+
+    MODEL
+        TEST
+        TEST2
+        TESTTEST
+    END
+
+    PROMPT
+        BLOB
+    END
+
+END

@@ -1,0 +1,16 @@
+QUESTION
+    PROMPT
+        \PROMPT
+        \KEYWORD
+        \END
+        \QUESTION
+        \MODEL
+    END
+
+    KEYWORDS
+        \ETNOE
+        \
+        \EFKJNFKJEF
+        \EFLKNKEFLKN EF
+    END
+END

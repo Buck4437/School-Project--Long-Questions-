@@ -1,0 +1,13 @@
+QUESTION
+    PROMPT
+        BLOB
+    END
+
+    KEYWORDS
+        BLOB
+    END
+END
+
+PROMPT
+    BLOB
+END

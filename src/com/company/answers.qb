@@ -1,0 +1,9 @@
+QUESTION
+    PROMPT
+        BLOB
+    END
+
+    MODEL
+        BLOB2
+    END
+END

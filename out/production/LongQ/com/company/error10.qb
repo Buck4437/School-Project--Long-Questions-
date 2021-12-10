@@ -1,0 +1,11 @@
+QUESTION
+    PROMPT
+        BLOB
+    END
+
+    KEYWORDS
+    END
+
+    MODEL
+    END
+END
