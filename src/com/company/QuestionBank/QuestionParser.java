@@ -1,4 +1,4 @@
-package com.company.qb_parser;
+package com.company.QuestionBank;
 
 import java.util.*;
 
@@ -86,8 +86,8 @@ public class QuestionParser {
         }
 
         // The line is inside an argument
-        // The line is backslashed
-        if (isBackslashed(line)) {
+        // The line starts with a backslash
+        if (isEscaped(line)) {
             line = line.substring(1);
         }
 
@@ -106,7 +106,7 @@ public class QuestionParser {
         return currentKeys.peek();
     }
 
-    private boolean isBackslashed(String line) {
+    private boolean isEscaped(String line) {
         return line.charAt(0) == '\\';
     }
 

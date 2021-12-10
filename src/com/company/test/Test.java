@@ -1,6 +1,6 @@
-package com.company;
+package com.company.test;
 
-import com.company.qb_parser.*;
+import com.company.QuestionBank.*;
 
 public class Test {
 
@@ -13,7 +13,7 @@ public class Test {
         int passes = 0;
         for (int i = 1; i <= 10; i++) {
             try {
-                new Parser("./src/com/company/error" + i + ".qb").parse();
+                new Parser("./src/com/company/test/error" + i + ".qb").parse();
                 System.out.printf("Test %s failed.\n", i);
                 break;
             } catch (Exception e) {
@@ -23,7 +23,7 @@ public class Test {
         }
         for (int i = 1; i <= 3; i++) {
             try {
-                new Parser("./src/com/company/pass" + i + ".qb").parse();
+                new Parser("./src/com/company/test/pass" + i + ".qb").parse();
                 passes ++;
             } catch (Exception e) {
                 System.out.println(e);

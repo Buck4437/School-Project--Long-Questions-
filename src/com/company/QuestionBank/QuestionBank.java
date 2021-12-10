@@ -1,20 +1,14 @@
-package com.company.qb_parser;
+package com.company.QuestionBank;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class QuestionBank {
 
-    private final ArrayList<Question> questionList;
-    private ArrayList<Question> currentQuestionList;
+    private final ArrayList<Question> currentQuestionList;
 
     public QuestionBank(ArrayList<Question> questions) {
-        this.questionList = new ArrayList<>(questions);
         this.currentQuestionList = new ArrayList<>(questions);
-    }
-
-    public void reset() {
-        currentQuestionList = new ArrayList<>(questionList);
     }
 
     public void randomize() {
@@ -29,11 +23,11 @@ public class QuestionBank {
     }
 
     public String toString() {
-        String str = "";
+        StringBuilder str = new StringBuilder();
         for (Question q: currentQuestionList) {
-            str += (q + "\n");
+            str.append(q).append("\n");
         }
-        return str;
+        return str.toString();
     }
 
 }

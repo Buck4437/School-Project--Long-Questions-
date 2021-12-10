@@ -1,4 +1,4 @@
-package com.company.qb_parser;
+package com.company.QuestionBank;
 
 public class ParserException extends Exception {
     public ParserException(String message, int lineCount, String line) {

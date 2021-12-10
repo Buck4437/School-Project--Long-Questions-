@@ -1,4 +1,4 @@
-package com.company.qb_parser;
+package com.company.QuestionBank;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
