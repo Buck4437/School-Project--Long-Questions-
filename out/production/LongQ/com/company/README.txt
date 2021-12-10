@@ -129,11 +129,14 @@ QUESTION
     PROMPT
         # This is valid! The prompt will become "END".
         \END
-        \
+        # This will not be treated as an empty line and become part of the data.
         \
     END
-
+    #... other arguments
+END
 
 
 --- Exceptions
-When an error
+Whenever a parser encounters an error, the parser will halt immediately.
+Following that, an exception will be thrown alongside with a helpful message, telling you the location of the issue.
+This will help you work out the problem and fix the issues.

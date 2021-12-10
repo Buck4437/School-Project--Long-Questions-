@@ -64,7 +64,7 @@ public class QuestionParser {
                     }
                     // The keyword has already been used
                     if (usedKeys.contains(key)) {
-                        throw new ParserException("Reuse of a previously declared argument", lineCount, line);
+                        throw new ParserException("Reuse of previously declared argument", lineCount, line);
                     }
                     // The keyword is outside a question and not start
                 } else if (!key.equals("start")) {
