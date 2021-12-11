@@ -32,15 +32,17 @@ public class Game {
         } while (question != null);
 
         System.out.println("Your total score is " + correct + " out of " + questionNo);
-        printGrade(correct / questionNo);
+        printGrade((float) correct / questionNo);
         System.out.println("Goodbye!");
     }
 
-    private static void printGrade(int ratio) {
+    private static void printGrade(float ratio) {
         if (ratio >= 1) {
             System.out.println("Perfect!");
-        } else if (ratio >= 0.5) {
+        } else if (ratio >= 0.75) {
             System.out.println("Good job!");
+        } else if (ratio >= 0.5) {
+            System.out.println("You passed!");
         } else {
             System.out.println("Study more!");
         }

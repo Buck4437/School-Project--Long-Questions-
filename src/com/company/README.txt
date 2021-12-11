@@ -6,8 +6,8 @@ which can be used to play quiz game.
 
 - Reading .qb files
 All questions are stored using .qb format.
-.qb files can be read by the QuestionParser, located in the QuestionBank package.
-To read a file, instantiate a new QuestionParser object (with the path name as argument).
+.qb files can be read by the Parser objects, located in the QuestionBank package.
+To read a file, instantiate a new object (with the path name as argument).
 Then, call the parse() method.
 The method will either return a QuestionBank object if the file is parsed successfully,
 or throw an exception if an error is present in the file.

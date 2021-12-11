@@ -45,7 +45,7 @@ public class Parser {
     }
 
     public boolean isComment(String s) {
-        return s.charAt(0) == '#';
+        return s.trim().charAt(0) == '#';
     }
 }
 

@@ -20,26 +20,23 @@ public class Question {
     public boolean verify(String answer) {
         boolean correct;
         if (hasKeyword()) {
-            System.out.println("The keywords are:\n" + keywords);
+            System.out.println("The keywords are:\n" + keywords + "\n");
             ArrayList<String> ans_key = keywordsInAns(answer);
-            System.out.println("Your answer contains these keywords:\n" + ans_key);
+            System.out.println("Your answer contains these keywords:\n" + ans_key + "\n");
 
             correct = keywords.size() == ans_key.size();
         } else {
-            if (hasModel()) {
-                printModel();
-            }
+            printModel();
             correct = answer.toLowerCase().equals(model.toLowerCase());
         }
         if (correct) {
-            System.out.println("Correct!");
+            System.out.println("Correct!\n");
         } else {
-            System.out.println("Incorrect!");
+            System.out.println("Incorrect!\n");
             if (hasModel() && hasKeyword()) {
                 printModel();
             }
         }
-        System.out.println();
         return correct;
     }
 
@@ -56,7 +53,7 @@ public class Question {
     }
 
     public void printModel() {
-        System.out.println("The model answer is: " + model);
+        System.out.println("The model answer is:\n" + model + "\n");
     }
 
     public String getPrompt() {

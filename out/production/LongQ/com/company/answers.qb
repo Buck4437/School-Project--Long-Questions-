@@ -1,16 +1,242 @@
 QUESTION
     PROMPT
-        List all 16s
-        \
-        \
-        \
-        Test
+        What's the next line to "We're no strangers to love"?
+    END
+
+    # Lyrics to "Never gonna give you up"
+    MODEL
+        You know the rules and so do I
+    END
+END
+
+QUESTION
+    PROMPT
+        What is the keyword used to store this text?
+    END
+
+    MODEL
+        \PROMPT
+    END
+END
+
+QUESTION
+    PROMPT
+        In the renowned game "Fruit Box", what value should the fruits sum to such that they can be cleared?
     END
 
     KEYWORDS
-        Stasis
-        Solarorbit
-        Wolves Standing Towards Enemies
-        Astaroth
+        10
+    END
+END
+
+QUESTION
+    PROMPT
+        Which lowercase three-letter word, after rotating 180°, still remains the same?
+    END
+
+    # It is still the same word after rotation
+    MODEL
+        pod
+    END
+END
+
+QUESTION
+    PROMPT
+        List out all bosses in Minecraft.
+    END
+
+    KEYWORDS
+        Wither
+        Ender Dragon
+    END
+END
+
+QUESTION
+    PROMPT
+        Which character is used to indicate a comment in a .qb file?
+    END
+
+    MODEL
+        \#
+    END
+END
+
+QUESTION
+    PROMPT
+        What is maximum score that can be achieved in Color Tiles?
+    END
+
+    KEYWORDS
+        200
+    END
+END
+
+QUESTION
+    PROMPT
+        ∆MAX is a song that constantly speeds up throughout the song. What is the maximum BPM of the song?
+    END
+
+    # The BPM rises from 100 to 573
+    KEYWORDS
+        573
+    END
+END
+
+QUESTION
+    PROMPT
+        What is the genre for songs with BPM higher than 1000?
+    END
+
+    KEYWORDS
+        Extratone
+    END
+END
+
+QUESTION
+    PROMPT
+        Cyclopentyne is a extremely unstable chemical compound. Explain its instability.
+    END
+
+    KEYWORDS
+        Alkyne
+        Bond angle
+        180
+        Ring
+        Carbon
+        Strain
+    END
+
+    MODEL
+        Carbons near the alkyne has an ideal bond angle of 180°.
+        Due to its ring structure, the carbon atoms experiences high steric strain.
+        Therefore, cyclopentyne is highly strained and is extremely unstable.
+    END
+END
+
+QUESTION
+    PROMPT
+        How many distinct colors can be represented by true colour?
+    END
+
+    # True color => 24 bit
+    # 2 ^ 24 => 16 777 216
+    KEYWORDS
+        16777216
+    END
+END
+
+QUESTION
+    PROMPT
+        What character should be used to display a question with empty lines,
+        \
+        \
+        \
+        like this question?
+    END
+
+    MODEL
+        \\
+    END
+END
+
+QUESTION
+    PROMPT
+        In the video game Arcaea, there are 4 difficulties: Past, Present, and Future. What is the 4th one?
+    END
+
+    MODEL
+        Beyond
+    END
+END
+
+QUESTION
+    PROMPT
+        Complete this sentence:
+        Red ___
+    END
+
+    MODEL
+        sus
+    END
+END
+
+QUESTION
+    PROMPT
+        What is the longest word consists of only vowels?
+    END
+
+    MODEL
+        euouae
+    END
+END
+
+QUESTION
+    PROMPT
+        In Advent of Code, what is the total amount of stars that can be collected from each year's event?
+    END
+
+    # 25 days * 2 stars per day
+    KEYWORDS
+        50
+    END
+END
+
+QUESTION
+    PROMPT
+        In the web game Universal Paperclips, besides Accept, which project allows you to reset the game?
+    END
+
+    KEYWORDS
+        Quantum Temporal Reversion
+    END
+END
+
+QUESTION
+    PROMPT
+        In the video game Portal 2, who is the founder of Aperture Science?
+    END
+
+    KEYWORDS
+        Cave Johnson
+    END
+END
+
+QUESTION
+    PROMPT
+        How many different kinds of tiles are present in the game Color Tiles?
+    END
+
+    KEYWORDS
+        10
+    END
+END
+
+QUESTION
+    PROMPT
+        Which game did the term "oof" come from?
+    END
+
+    MODEL
+        Roblox
+    END
+END
+
+QUESTION
+    PROMPT
+        In Angry Birds, what is the boomerang bird called?
+    END
+
+    MODEL
+        Hal
+    END
+END
+
+QUESTION
+    PROMPT
+        In Among Us, for the map "Skeld", where do emergency meetings take place?
+    END
+
+    MODEL
+        Cafeteria
     END
 END
